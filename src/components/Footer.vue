@@ -325,11 +325,7 @@ i:hover {
   background: #d1b562;
 }
 .curent.farms {
-  background: linear-gradient(
-    108.57deg,
-    #21ba45 -42.41%,
-    rgba(0, 0, 0, 0) 112.17%
-  );
+  background: linear-gradient(108.57deg, #21ba45, rgba(0, 0, 0, 0) 1121.17%);
 }
 .curent.rima {
   background: linear-gradient(

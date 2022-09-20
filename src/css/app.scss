@@ -120,12 +120,17 @@ a {
 .side_bar .q-btn:before {
   box-shadow: none;
 }
-// .head {
-//   border-left: 6px solid #db6c0d;
-// }
-// .img_height {
-//   height: 400px;
-// }
+.wheat .splide__pagination {
+  bottom: -1.5em;
+}
+
+.wheat .splide__pagination__page.is-active {
+  background: #005be3 !important;
+  z-index: 1;
+}
+.wheat .splide {
+  padding: 0 !important;
+}
 
 @media (max-width: 1000px) {
   .flexer {

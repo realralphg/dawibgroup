@@ -10,7 +10,7 @@
           navigation-icon="radio_button_unchecked"
           navigation
           infinite
-          autoplay="true"
+          autoplay
         >
           <q-carousel-slide
             class="slider"
@@ -180,7 +180,51 @@
         <div
           class="col-md-6 col-sm-12 col-xs-12 flex items-center justify-center"
         >
-          <img class="img_height" src="/images/wheat.jpeg" alt="" />
+          <Splide
+            :options="{
+              rewind: true,
+              arrows: false,
+              autoplay: true,
+              gap: '2rem',
+            }"
+            aria-label="My Favorite Images"
+          >
+            <SplideSlide>
+              <img
+                class="img_height wheat_height"
+                src="/images/wheat1.jpeg"
+                alt=""
+              />
+            </SplideSlide>
+            <SplideSlide>
+              <img
+                class="img_height wheat_height"
+                src="/images/wheat2.jpeg"
+                alt=""
+              />
+            </SplideSlide>
+            <SplideSlide>
+              <img
+                class="img_height wheat_height"
+                src="/images/wheat3.jpeg"
+                alt=""
+              />
+            </SplideSlide>
+            <SplideSlide>
+              <img
+                class="img_height wheat_height"
+                src="/images/wheat4.jpeg"
+                alt=""
+              />
+            </SplideSlide>
+            <SplideSlide>
+              <img
+                class="img_height wheat_height"
+                src="/images/wheat.jpeg"
+                alt=""
+              />
+            </SplideSlide>
+          </Splide>
         </div>
         <div class="col-md-6 col-sm-12 col-xs-12">
           <div class="text-h3 header__text">Wheat Farm</div>
@@ -278,13 +322,23 @@
 
 <script>
 import { ref } from "vue";
-
+import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import Processing from "../components/Businesses/Processing.vue";
 import Footer from "../components/Footer.vue";
+import "@splidejs/vue-splide/css";
+
+// or other themes
+import "@splidejs/vue-splide/css/skyblue";
+import "@splidejs/vue-splide/css/sea-green";
+
+// or only core styles
+import "@splidejs/vue-splide/css/core";
 export default {
   components: {
     Footer,
     Processing,
+    Splide,
+    SplideSlide,
   },
   data() {
     return {
@@ -415,14 +469,18 @@ export default {
 
 img {
   transition: all 0.5s ease-in-out;
-  margin: 0.65rem;
+  /* margin: 0.65rem; */
   position: relative;
 }
 img:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   z-index: 200;
 }
 
+.wheat_height {
+  height: 400px;
+  object-fit: cover;
+}
 @media (max-width: 900px) {
   .hero_title {
     font-size: 26px;
