@@ -147,6 +147,8 @@
       </div>
     </div>
     <Values />
+
+    <Boards />
     <!-- <OurProjects /> -->
     <!-- <Gallery /> -->
     <Footer />
@@ -159,6 +161,7 @@ import OurProjects from "../components/About/OurProjects.vue";
 import Values from "../components/About/Values.vue";
 import Gallery from "../components/About/Gallery.vue";
 import Footer from "../components/Footer.vue";
+import Boards from "../components/Boards.vue";
 
 export default {
   data() {
@@ -171,6 +174,7 @@ export default {
     Gallery,
     Values,
     Footer,
+    Boards,
   },
 };
 </script>

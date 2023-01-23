@@ -28,7 +28,7 @@
             />
             <q-btn-dropdown style="color: black" no-caps label="Our Businesses">
               <q-list>
-                <q-item to="/our" clickable v-close-popup @click="onItemClick">
+                <q-item to="/our" clickable v-close-popup>
                   <q-item-section>
                     <q-item-label class="text-weight-bold"
                       >DAWIB INVESTMENT RESOURCES</q-item-label
@@ -36,12 +36,7 @@
                   </q-item-section>
                 </q-item>
 
-                <q-item
-                  to="/farms"
-                  clickable
-                  v-close-popup
-                  @click="onItemClick"
-                >
+                <q-item to="/farms" clickable v-close-popup>
                   <q-item-section>
                     <q-item-label class="text-weight-bold"
                       >DAWIB FARMS LIMITED</q-item-label
@@ -49,7 +44,7 @@
                   </q-item-section>
                 </q-item>
 
-                <q-item to="/rima" clickable v-close-popup @click="onItemClick">
+                <q-item to="/rima" clickable v-close-popup>
                   <q-item-section>
                     <q-item-label class="text-weight-bold"
                       >RIMA GUARDS
@@ -154,13 +149,7 @@
             exact
           >
             <q-list>
-              <q-item
-                to="/our"
-                exact
-                clickable
-                v-close-popup
-                @click="onItemClick"
-              >
+              <q-item to="/our" exact clickable v-close-popup>
                 <q-item-section>
                   <q-item-label class="text-weight-bold"
                     >DAWIB INVESTMENT RESOURCES</q-item-label
@@ -168,13 +157,7 @@
                 </q-item-section>
               </q-item>
 
-              <q-item
-                to="/farms"
-                exact
-                clickable
-                v-close-popup
-                @click="onItemClick"
-              >
+              <q-item to="/farms" exact clickable v-close-popup>
                 <q-item-section>
                   <q-item-label class="text-weight-bold"
                     >DAWIB FARM LIMITED</q-item-label
@@ -182,13 +165,7 @@
                 </q-item-section>
               </q-item>
 
-              <q-item
-                to="/rima"
-                exact
-                clickable
-                v-close-popup
-                @click="onItemClick"
-              >
+              <q-item to="/rima" exact clickable v-close-popup>
                 <q-item-section>
                   <q-item-label class="text-weight-bold"
                     >RIMA GUARDS

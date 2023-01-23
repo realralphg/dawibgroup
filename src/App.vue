@@ -9,9 +9,3 @@ export default defineComponent({
   name: "App",
 });
 </script>
-
-<style>
-html {
-  scroll-behavior: smooth;
-}
-</style>
